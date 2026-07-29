@@ -1,29 +1,43 @@
-/* ============================================
-   Monster Music BD - All logic + product data
-   ============================================ */
 
 var PRODUCTS = [
   // ===== HEADPHONES =====
-  { id:"mh-001", name:"Monster Inspiration 2.0", model:"MH-INS-2.0", category:"headphones",
-    regularPrice:18500, discountPrice:14990, rating:4.8, stock:"In Stock", badge:"Best Seller",
+  { id:"mh-001", name:"Monster Mission ANC200", model:"MH-MSN-200", category:"headphones",
+    regularPrice:18500, discountPrice:12400, rating:0, stock:"In Stock", badge:"Best Seller",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/3394651/pexels-photo-3394651.jpeg", caption:"Side profile"},
-      {type:"image", url:"https://images.pexels.com/photos/3394652/pexels-photo-3394652.jpeg", caption:"Ear cup detail"},
-      {type:"video", url:"https://cdn.coverr.co/videos/coverr-headphones-on-table-2633/1080p.mp4", caption:"Product video"}
+      {type:"image", url:"images/anc200.jpg", caption:"Front view"},
+      {type:"image", url:"images/anc200_1.jpg", caption:"Side profile"},
+      {type:"image", url:"images/anc200_3.jpg", caption:"Ear cup detail"},
+      {type:"image", url:"images/anc200_2.jpg", caption:"Ear cup detail"},
+      {type:"image", url:"images/anc200_7.jpg", caption:"Ear cup detail"},
+      {type:"image", url:"images/anc200_4.jpg", caption:"Ear cup detail"},
+      {type:"image", url:"images/anc200_6.jpg", caption:"Ear cup detail"},
+      {type:"image", url:"images/anc200_5.jpg", caption:"Ear cup detail"},
+      // {type:"video", url:"https://cdn.coverr.co/videos/coverr-headphones-on-table-2633/1080p.mp4", caption:"Product video"}
     ],
-    description:"Flagship over-ear headphones with Pure Monster Sound tuning, active noise cancellation, 40mm titanium drivers, and 30-hour battery life. Premium leather ear cushions and foldable design for travel.",
-    specs:[{label:"Driver",value:"40mm Titanium"},{label:"Battery",value:"30 hours"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Weight",value:"260g"},{label:"Charging",value:"USB-C"}] },
-  { id:"mh-002", name:"Monster Clarity 108 ANC", model:"MH-CL-108", category:"headphones",
-    regularPrice:12500, discountPrice:9750, rating:4.6, stock:"In Stock", badge:"Hot Deal",
+    description:"Experience immersive gaming with the Monster Mission ANC200. Featuring Active Noise Cancellation (ANC), ultra-low latency wireless connectivity, AI noise-cancelling microphone, dual Game & Music modes, RGB lighting, and up to 70 hours of battery life for exceptional performance and comfort.",
+    specs:[{label:"Bluetooth Version",value:"6.0"},{label:"Wireless Technology",value:"2.4GHz Wireless"},{label:"Surround Sound",value:"7.1 Virtual Surround Sound"},{label:"Sound Modes",value:"Game Mode & Music Mode"},{label:"Battery",value:"Up to 70 Hours"},{label:"Latency",value:"Ultra-Low(<20ms)"},{label:"Noise Cancellation",value:"ANC up to 32dB"},{label:"RGB Lighting",value:"Yes"},{label:"Charging Time",value:"Approx. 3 Hours"},{label:"Charging",value:"USB-C"}] },
+  
+    { id:"mh-002", name:"Monster Persona SE ANC", model:"MH-PSN-SE", category:"headphones",
+    regularPrice:16050, discountPrice:8999, rating:0, stock:"In Stock", badge:"Hot Deal",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/3741114/pexels-photo-3741114.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/3741115/pexels-photo-3741115.jpeg", caption:"Folded"},
-      {type:"video", url:"https://cdn.coverr.co/videos/coverr-using-headphones-2634/1080p.mp4", caption:"In use"}
+      {type:"image", url:"images/se_b.jpg", caption:"Front view"},
+      {type:"image", url:"images/se_w.jpg", caption:"Front view"},
+      {type:"image", url:"images/se13.jpeg", caption:"Front view"},
+      {type:"image", url:"images/se.jpeg", caption:"Front view"},
+      {type:"image", url:"images/se5.jpg", caption:"Front view"},
+      {type:"image", url:"images/se8.jpg", caption:"Front view"},
+      {type:"image", url:"images/se9.jpg", caption:"Front view"},
+      {type:"image", url:"images/se7.jpg", caption:"Front view"},
+       {type:"image", url:"images/se10.jpg", caption:"Front view"},
+      
+      // {type:"image", url:"https://images.pexels.com/photos/3741115/pexels-photo-3741115.jpeg", caption:"Folded"},
+      // {type:"video", url:"https://cdn.coverr.co/videos/coverr-using-headphones-2634/1080p.mp4", caption:"In use"}
     ],
-    description:"Wireless over-ear with adaptive noise cancellation, 40mm drivers, and plush memory foam cushions. 25-hour playback with quick charge support.",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"25 hours"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"Adaptive"},{label:"Weight",value:"240g"},{label:"Charging",value:"USB-C"}] },
-  { id:"mh-003", name:"Monster Elements Over-Ear", model:"MH-EL-OE", category:"headphones",
+    description:"The Monster Persona SE ANC wireless over-ear headphones combine active noise cancellation, signature audio tuning, and extended battery life for all-day listening. They block up to 98% of ambient noise while offering up to 60 hours of total playtime.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Up to 60 Hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Blocks 98% background noise"},{label:"Charge",value:"5 mins gives 4 hours"},{label:"Charging",value:"USB-C"}] },
+ 
+ 
+    { id:"mh-003", name:"Monster Elements Over-Ear", model:"MH-EL-OE", category:"headphones",
     regularPrice:15500, discountPrice:12200, rating:4.7, stock:"In Stock", badge:"",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg", caption:"Front view"},

@@ -1,7 +1,3 @@
-/* ============================================
-   Monster Music BD - Global Styles
-   Theme: Dark + Red (Monster brand)
-   ============================================ */
 
 :root {
   --primary-50: #fff1f1;
@@ -119,7 +115,7 @@ input, textarea, select { font-family: inherit; }
   object-fit: contain;
   border-radius: var(--r-sm);
   background: var(--n-0);
-  padding: 4px;
+  /* padding: 4px; */
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name {
