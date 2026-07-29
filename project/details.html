@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | Monster Music BD</title>
+  <meta name="description" content="Full product details, media gallery, and buying options for Monster audio products." />
+  <link rel="icon" type="image/svg+xml" href="images/image.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="images/image.svg" alt="Monster Music BD logo" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Monster <span class="accent">Music</span> BD</span>
+          <span class="brand-sub">Tech n' Trinkets</span>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link" data-nav="home">Home</a>
+        <a href="index.html#headphones" class="nav-link" data-nav="headphones">Headphones</a>
+        <a href="index.html#tws" class="nav-link" data-nav="tws">TWS Earbuds</a>
+        <a href="index.html#open" class="nav-link" data-nav="open">Open Earbuds</a>
+        <a href="index.html#all" class="nav-link" data-nav="all">All Products</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- DETAIL -->
+  <section class="detail-wrap">
+    <div class="container">
+      <nav class="breadcrumb" id="breadcrumb"></nav>
+      <div id="detailRoot">
+        <div class="empty-state">
+          <h3>Loading product...</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">You may also like</span>
+          <h2>Related products</h2>
+        </div>
+        <a href="index.html#all" class="section-link">View all &rarr;</a>
+      </div>
+      <div class="product-grid" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="images/image.svg" alt="Monster Music BD" class="brand-logo">
+          <div>
+            <div class="footer-brand-name">Monster Music BD</div>
+            <div class="footer-brand-sub">by Tech n' Trinkets</div>
+          </div>
+        </div>
+        <p class="footer-tagline">Premium Monster audio products in Bangladesh. Authentic, warrantied, and beautifully tuned.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn fb" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.5a6.3 6.3 0 1 0 0 12.6 6.3 6.3 0 0 0 0-12.6Zm0 10.4a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.2Zm6.5-10.6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+          </a>
+          <a href="https://m.me/your-page" target="_blank" rel="noopener" class="social-btn ms" aria-label="Messenger">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-10 9.8c0 2.9 1.3 5.5 3.4 7.3v3.6l3.2-1.8c.9.2 1.8.4 2.8.4a10 10 0 0 0 10-9.8A10 10 0 0 0 12 2Zm1 13.4-2.5-2.7-4.9 2.7 5.4-5.7 2.6 2.7 4.8-2.7-5.4 5.7Z"/></svg>
+          </a>
+          <a href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" class="social-btn wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#headphones">Headphones</a></li>
+          <li><a href="index.html#tws">TWS Earbuds</a></li>
+          <li><a href="index.html#open">Open Earbuds</a></li>
+          <li><a href="index.html#all">All Products</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Policies</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-modal="terms">Terms &amp; Conditions</a></li>
+          <li><a href="#" data-modal="warranty">Warranty Claim Rules</a></li>
+          <li><a href="#" data-modal="returns">Return &amp; Refund</a></li>
+          <li><a href="#" data-modal="privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Contact</h4>
+        <ul class="footer-links">
+          <li>Tech n' Trinkets</li>
+          <li>Dhaka, Bangladesh</li>
+          <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp: +8801XX-XXXXXXX</a></li>
+          <li><a href="https://m.me/your-page">Messenger</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; <span id="year"></span> Monster Music BD. All rights reserved.</span>
+        <span>Premium Monster audio &middot; Tech n' Trinkets</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay" style="display:none">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

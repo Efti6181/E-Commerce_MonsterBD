@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="24" fill="#0d0f13"/>
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="72" font-weight="900" text-anchor="middle" fill="#e63946">M</text>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#eceef2" letter-spacing="2">MONSTER</text>
+</svg>
