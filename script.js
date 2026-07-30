@@ -1,8 +1,8 @@
 
 var PRODUCTS = [
   // ===== HEADPHONES =====
-  { id:"mh-001", name:"Monster Mission ANC200", model:"MH-MSN-200", category:"headphones",
-    regularPrice:18500, discountPrice:12400, rating:0, stock:"In Stock", badge:"Best Seller",
+  { id:"mh-001", name:"Monster Mission ANC200", model:"MH-MN-ANC200", category:"headphones",
+    regularPrice:18999, discountPrice:12399, rating:0, stock:"In Stock", badge:"Best Seller",
     media:[
       {type:"image", url:"images/anc200.jpg", caption:"Front view"},
       {type:"image", url:"images/anc200_1.jpg", caption:"Side profile"},
@@ -17,8 +17,8 @@ var PRODUCTS = [
     description:"Experience immersive gaming with the Monster Mission ANC200. Featuring Active Noise Cancellation (ANC), ultra-low latency wireless connectivity, AI noise-cancelling microphone, dual Game & Music modes, RGB lighting, and up to 70 hours of battery life for exceptional performance and comfort.",
     specs:[{label:"Bluetooth Version",value:"6.0"},{label:"Wireless Technology",value:"2.4GHz Wireless"},{label:"Surround Sound",value:"7.1 Virtual Surround Sound"},{label:"Sound Modes",value:"Game Mode & Music Mode"},{label:"Battery",value:"Up to 70 Hours"},{label:"Latency",value:"Ultra-Low(<20ms)"},{label:"Noise Cancellation",value:"ANC up to 32dB"},{label:"RGB Lighting",value:"Yes"},{label:"Charging Time",value:"Approx. 3 Hours"},{label:"Charging",value:"USB-C"}] },
   
-    { id:"mh-002", name:"Monster Persona SE ANC", model:"MH-PSN-SE", category:"headphones",
-    regularPrice:16050, discountPrice:8999, rating:0, stock:"In Stock", badge:"Hot Deal",
+    { id:"mh-002", name:"Monster Persona SE ANC", model:"MH-PS-SE", category:"headphones",
+    regularPrice:16499, discountPrice:8999, rating:0, stock:"In Stock", badge:"Hot Deal",
     media:[
       {type:"image", url:"images/se_b.jpg", caption:"Front view"},
       {type:"image", url:"images/se_w.jpg", caption:"Front view"},
@@ -37,40 +37,283 @@ var PRODUCTS = [
     specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Up to 60 Hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Blocks 98% background noise"},{label:"Charge",value:"5 mins gives 4 hours"},{label:"Charging",value:"USB-C"}] },
  
  
-    { id:"mh-003", name:"Monster Elements Over-Ear", model:"MH-EL-OE", category:"headphones",
-    regularPrice:15500, discountPrice:12200, rating:4.7, stock:"In Stock", badge:"",
+    { id:"mh-003", name:"Monster Storm XKH01", model:"MH-ST-XKT01", category:"headphones",
+    regularPrice:8499, discountPrice:3799, rating:0, stock:"In Stock", badge:"",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/4709823/pexels-photo-4709823.jpeg", caption:"Detail"},
-      {type:"image", url:"https://images.pexels.com/photos/4709824/pexels-photo-4709824.jpeg", caption:"Case"}
+      {type:"image", url:"images/xkh01_main.jpeg", caption:"Front view"},
+      {type:"video", url:"images/xkh01v.mp4", caption:"Product video"},
+      {type:"image", url:"images/xkh01b.jpg", caption:"Detail"},
+      {type:"image", url:"images/xkh11_3.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01r.jpg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_.jpg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_4.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_6.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_5.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_7.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_8.jpeg", caption:"Detail"},
+      {type:"image", url:"images/xkh01_9.jpeg", caption:"Case"}
     ],
-    description:"Studio-tuned over-ear headphones with balanced sound signature, detachable cable, and premium aluminum build. Perfect for critical listening.",
-    specs:[{label:"Driver",value:"42mm"},{label:"Battery",value:"28 hours"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"Passive"},{label:"Weight",value:"280g"},{label:"Charging",value:"USB-C"}] },
-  { id:"mh-004", name:"Monster N-Lite 202", model:"MH-NL-202", category:"headphones",
-    regularPrice:6500, discountPrice:4990, rating:4.3, stock:"In Stock", badge:"Budget Pick",
+    description:"Experience powerful Hi-Fi sound with the Monster Storm XKH01. Featuring Bluetooth 5.3, 40mm dynamic drivers, up to 25 hours of battery life, and low-latency gaming mode, it's the perfect choice for music, gaming, and daily use. Its lightweight foldable design and soft ear cushions ensure all-day comfort.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"25 hours"},{label:"Bluetooth",value:"5.3"},{label:"ENC",value:"Noise Reduction"},{label:"Latency",value:"Low Latency(≤65ms)"},{label:"Charging",value:"USB-C"}] },
+  
+  
+  
+    { id:"mh-004", name:"Monster Storm XKH02", model:"MH-ST-XKT02", category:"headphones",
+    regularPrice:9499, discountPrice:4899, rating:0, stock:"In Stock", badge:"",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/1649772/pexels-photo-1649772.jpeg", caption:"Side"}
+      {type:"image", url:"images/xkh02bwr.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02b.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02w.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02r.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02_.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02_com.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh02wp.jpeg", caption:"Side"}
     ],
-    description:"Entry-level wireless headphones with punchy bass, 20-hour battery, and comfortable fit. Great value for everyday listening.",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"20 hours"},{label:"Bluetooth",value:"5.0"},{label:"ANC",value:"No"},{label:"Weight",value:"220g"},{label:"Charging",value:"Micro-USB"}] },
-  { id:"mh-005", name:"Monster DNA Pro", model:"MH-DNA-PRO", category:"headphones",
-    regularPrice:22000, discountPrice:17900, rating:4.9, stock:"In Stock", badge:"Premium",
+    description:"Enjoy immersive audio with the Monster XKH02, featuring advanced Bluetooth 5.4 connectivity, powerful 40mm drivers, and up to 25 hours of battery life. Designed for music, gaming, and everyday use, it offers reliable wireless performance with the flexibility of wired AUX connectivity.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"upto 25 hours"},{label:"Bluetooth",value:"5.4"},{label:"Frequency Response",value:"20Hz-20kHz Wide"},{label:"ENC",value:"Present"},{label:"Charging",value:"Micro-USB"}] },
+  { id:"mh-005", name:"Monster Storm XKH03", model:"MH-ST-XKT03", category:"headphones",
+    regularPrice:19999, discountPrice:7499, rating:0, stock:"In Stock", badge:"Premium",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/5775838/pexels-photo-5775838.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/5775840/pexels-photo-5775840.jpeg", caption:"Ear cup"},
-      {type:"video", url:"https://cdn.coverr.co/videos/coverr-headphones-on-table-2633/1080p.mp4", caption:"Product video"}
+      {type:"image", url:"images/xkh03rbw.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh03b.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh03w.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh03r.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh03_.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xkh03_1.jpeg", caption:"Front view"},
+      // {type:"image", url:"https://images.pexels.com/photos/5775840/pexels-photo-5775840.jpeg", caption:"Ear cup"},
+      // {type:"video", url:"https://cdn.coverr.co/videos/coverr-headphones-on-table-2633/1080p.mp4", caption:"Product video"}
     ],
-    description:"Reference-grade headphones with planar magnetic drivers, hi-res audio certification, and premium leather finish. For audiophiles who demand the best.",
-    specs:[{label:"Driver",value:"Planar Magnetic"},{label:"Battery",value:"35 hours"},{label:"Bluetooth",value:"5.3 + LDAC"},{label:"ANC",value:"Hybrid ANC"},{label:"Weight",value:"310g"},{label:"Charging",value:"USB-C"}] },
-  { id:"mh-006", name:"Monster Sport Wireless", model:"MH-SP-WL", category:"headphones",
-    regularPrice:8900, discountPrice:6990, rating:4.4, stock:"Low Stock", badge:"",
+    description:"Enjoy powerful Hi-Fi audio and immersive gaming with the Monster XKH03. Equipped with Bluetooth 5.3, large 40mm dynamic drivers, Active Noise Cancellation, and a massive 600mAh battery, it delivers up to 25 hours of wireless playback. The foldable over-ear design ensures comfort for gaming, music, and daily use. ",
+    specs:[{label:"Driver",value:"40mm Dynamic"},{label:"Battery",value:"Up to 25 Hours"},{label:"Bluetooth",value:"5.3"},{label:"ANC + ENC",value:"Supported"},{label:"Microphone",value:"Built-in HD"},{label:"Range",value:"Up to 10m"},{label:"Connectivity",value:" Bluetooth + AUX Cable"},{label:"Frequency Response",value:"20Hz–20kHz"}] },
+  
+  
+  
+    { id:"mh-006", name:"Monster Aura Fit XH11", model:"MH-AF-XH11", category:"headphones",
+    regularPrice:6499, discountPrice:2799, rating:0, stock:"Low Stock", badge:"",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/2078958/pexels-photo-2078958.jpeg", caption:"Front view"},
-      {type:"image", url:"https://images.pexels.com/photos/2078959/pexels-photo-2078959.jpeg", caption:"Action"}
+      {type:"image", url:"images/xh11m.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11br.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11b.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11w.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_1.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_br.jpeg", caption:"Action"}
     ],
-    description:"Sweat-resistant sports headphones with secure fit hook, powerful bass, and IPX5 water resistance. Built for the gym and outdoor runs.",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"18 hours"},{label:"Bluetooth",value:"5.1"},{label:"ANC",value:"No"},{label:"Weight",value:"200g"},{label:"Rating",value:"IPX5"}] },
+    description:"Experience immersive sound with the Monster Aura Fit XH11. Featuring powerful 40mm drivers, Bluetooth 5.4 connectivity, ANC noise cancellation, and up to 22 hours of battery life, it's built for music, gaming, and everyday use. The foldable design and soft ear cushions provide lasting comfort",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"22 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging Time",value:"About 2 Hours"}] },
+
+
+    { id:"mh-007", name:"Monster Maxstar MQH08", model:"MH-MS-MQH08", category:"headphones",
+    regularPrice:5899, discountPrice:2199, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+     { id:"mh-008", name:"Monster Persona 3rd ANC", model:"MH-PS-3ANC", category:"headphones",
+    regularPrice:7499, discountPrice:2999, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+
+     { id:"mh-009", name:"Monster Persona 4th ANC", model:"MH-PS-4ANC", category:"headphones",
+    regularPrice:8499, discountPrice:3299, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+
+     { id:"mh-010", name:"Monster Persona 5th ANC", model:"MH-PS-5ANC", category:"headphones",
+    regularPrice:8999, discountPrice:3499, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+     { id:"mh-011", name:"Monster Persona 6th ANC", model:"MH-PS-6ANC", category:"headphones",
+    regularPrice:14999, discountPrice:10099, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+
+     { id:"mh-012", name:"Monster MIssion 100", model:"MH-MN-100", category:"headphones",
+    regularPrice:3899, discountPrice:1599, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+     { id:"mh-013", name:"Monster MIssion 200", model:"MH-MN-200", category:"headphones",
+    regularPrice:4999, discountPrice:3599, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+     { id:"mh-014", name:"Monster MIssion 300", model:"MH-MN-300", category:"headphones",
+    regularPrice:20999, discountPrice:12299, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+     { id:"mh-015", name:"Monster Harmonic N10", model:"MH-HM-N10", category:"headphones",
+    regularPrice:5099, discountPrice:2199, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+     { id:"mh-016", name:"Monster Harmonic N21", model:"MH-HM-N21", category:"headphones",
+    regularPrice:5999, discountPrice:2899, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
+ { id:"mh-017", name:"Monster Harmonic N22", model:"MH-HM-N22", category:"headphones",
+    regularPrice:24499, discountPrice:13799, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"}] },
+
+
 
   // ===== TWS EARBUDS =====
   { id:"tws-001", name:"Monster Clarity 101 Air", model:"TWS-CL-101", category:"tws",
@@ -81,7 +324,7 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
     ],
     description:"True wireless earbuds with 10mm drivers, ENC mic, touch controls, and 24-hour total battery with charging case. Compact and lightweight.",
-    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C + Qi"}] },
+    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging",value:"USB-C + Qi"}] },
   { id:"tws-002", name:"Monster Soundflow 152", model:"TWS-SF-152", category:"tws",
     regularPrice:9800, discountPrice:7490, rating:4.7, stock:"In Stock", badge:"ANC",
     media:[
