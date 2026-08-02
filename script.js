@@ -39,6 +39,55 @@ var PRODUCTS = [
     description:"The Monster Persona SE ANC wireless over-ear headphones combine active noise cancellation, signature audio tuning, and extended battery life for all-day listening. They block up to 98% of ambient noise while offering up to 60 hours of total playtime.",
     specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Up to 60 Hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Blocks 98% background noise"},{label:"Charge",value:"5 mins gives 4 hours"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year"}] },
  
+
+    { id:"mh-006", name:"Monster Aura Fit XH11", model:"MH-AF-XH11", category:"headphones",
+    regularPrice:6499, discountPrice:2799, rating:0, stock:"Low Stock", badge:"HOT DEAL",
+    media:[
+      {type:"image", url:"images/xh11m.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11br.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11b.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11w.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_1.jpeg", caption:"Front view"},
+      {type:"image", url:"images/xh11_br.jpeg", caption:"Action"}
+    ],
+    description:"Experience immersive sound with the Monster Aura Fit XH11. Featuring powerful 40mm drivers, Bluetooth 5.4 connectivity, ANC noise cancellation, and up to 22 hours of battery life, it's built for music, gaming, and everyday use. The foldable design and soft ear cushions provide lasting comfort",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"22 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging Time",value:"About 2 Hours"},{label:"Warranty",value:"1 Yaer"}] },
+
+
+    { id:"mh-018", name:"Monster Airstar AH100", model:"MH-AS-AH100", category:"headphones",
+    regularPrice:6199, discountPrice:2999, rating:0, stock:"Out Of Stock", badge:"",
+    media:[
+      {type:"image", url:"img/ah100.jpeg", caption:"Front view"},
+      {type:"image", url:"img/ah100_1.jpeg", caption:"Front view"},
+      {type:"image", url:"img/ah100_2.jpeg", caption:"Front view"},
+      {type:"image", url:"img/ah100_3.jpeg", caption:"Front view"},
+      {type:"image", url:"img/ah100_4.jpeg", caption:"Front view"},
+      {type:"image", url:"img/ah100_5.jpeg", caption:"Action"}
+    ],
+    description:"The Monster Harmonic N22 is a premium ANC headphone featuring Bluetooth 6.0, powerful 40mm drivers, and an incredible 110-hour battery life. With Hybrid ANC, Transparency Mode, and multipoint connectivity, it's designed for immersive music, travel, work, and gaming.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 110 hours"},{label:"Bluetooth",value:"6.0"},{label:"ANC",value:"Hybrid"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"ANC Depth",value:"Up to -45dB"},{label:"Warranty",value:"1 Year "}] },
+
+
+
+    { id:"mh-007", name:"Monster Maxstar MQH08", model:"MH-MS-MQH08", category:"headphones",
+    regularPrice:5899, discountPrice:2199, rating:0, stock:"Low Stock", badge:"",
+    media:[
+      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    ],
+    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"},{label:"Warranty",value:"1 Year"},] },
+
  
     { id:"mh-003", name:"Monster Storm XKH01", model:"MH-ST-XKT01", category:"headphones",
     regularPrice:8499, discountPrice:3799, rating:0, stock:"In Stock", badge:"",
@@ -75,7 +124,7 @@ var PRODUCTS = [
     description:"Enjoy immersive audio with the Monster XKH02, featuring advanced Bluetooth 5.4 connectivity, powerful 40mm drivers, and up to 25 hours of battery life. Designed for music, gaming, and everyday use, it offers reliable wireless performance with the flexibility of wired AUX connectivity.",
     specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"upto 25 hours"},{label:"Bluetooth",value:"5.4"},{label:"Frequency Response",value:"20Hz-20kHz Wide"},{label:"ENC",value:"Present"},{label:"Charging",value:"Micro-USB"},{label:"Warranty",value:"1 Year"}] },
   { id:"mh-005", name:"Monster Storm XKH03", model:"MH-ST-XKT03", category:"headphones",
-    regularPrice:19999, discountPrice:7499, rating:0, stock:"In Stock", badge:"Premium",
+    regularPrice:19999, discountPrice:7499, rating:0, stock:"In Stock", badge:"GAMING",
     media:[
       {type:"image", url:"images/xkh03rbw.jpeg", caption:"Front view"},
       {type:"image", url:"images/xkh03b.jpeg", caption:"Front view"},
@@ -91,38 +140,38 @@ var PRODUCTS = [
   
   
   
-    { id:"mh-006", name:"Monster Aura Fit XH11", model:"MH-AF-XH11", category:"headphones",
-    regularPrice:6499, discountPrice:2799, rating:0, stock:"Low Stock", badge:"",
-    media:[
-      {type:"image", url:"images/xh11m.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11br.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11b.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11w.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11_.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11_1.jpeg", caption:"Front view"},
-      {type:"image", url:"images/xh11_br.jpeg", caption:"Action"}
-    ],
-    description:"Experience immersive sound with the Monster Aura Fit XH11. Featuring powerful 40mm drivers, Bluetooth 5.4 connectivity, ANC noise cancellation, and up to 22 hours of battery life, it's built for music, gaming, and everyday use. The foldable design and soft ear cushions provide lasting comfort",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"22 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging Time",value:"About 2 Hours"},{label:"Warranty",value:"1 Yaer"}] },
+    // { id:"mh-006", name:"Monster Aura Fit XH11", model:"MH-AF-XH11", category:"headphones",
+    // regularPrice:6499, discountPrice:2799, rating:0, stock:"Low Stock", badge:"HOT DEAL",
+    // media:[
+    //   {type:"image", url:"images/xh11m.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11br.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11b.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11w.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11_.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11_1.jpeg", caption:"Front view"},
+    //   {type:"image", url:"images/xh11_br.jpeg", caption:"Action"}
+    // ],
+    // description:"Experience immersive sound with the Monster Aura Fit XH11. Featuring powerful 40mm drivers, Bluetooth 5.4 connectivity, ANC noise cancellation, and up to 22 hours of battery life, it's built for music, gaming, and everyday use. The foldable design and soft ear cushions provide lasting comfort",
+    // specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"22 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging Time",value:"About 2 Hours"},{label:"Warranty",value:"1 Yaer"}] },
 
 
-    { id:"mh-007", name:"Monster Maxstar MQH08", model:"MH-MS-MQH08", category:"headphones",
-    regularPrice:5899, discountPrice:2199, rating:0, stock:"Low Stock", badge:"",
-    media:[
-      {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
-      {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
-    ],
-    description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"},{label:"Warranty",value:"1 Year"},] },
+    // { id:"mh-007", name:"Monster Maxstar MQH08", model:"MH-MS-MQH08", category:"headphones",
+    // regularPrice:5899, discountPrice:2199, rating:0, stock:"Low Stock", badge:"",
+    // media:[
+    //   {type:"image", url:"img/mqh08wb.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_b.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_w.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
+    //   {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
+    // ],
+    // description:"Enjoy powerful sound, premium comfort, and long-lasting performance with the Monster MQH08. Featuring 40mm titanium-coated drivers, immersive 360° spatial audio, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life, these headphones are designed for music lovers, gamers, and everyday users alike. The lightweight 200g design, soft protein leather ear cushions, and dual-device connectivity ensure all-day comfort and convenience.",
+    // specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 60 hours"},{label:"Bluetooth",value:"5.4"},{label:"ANC",value:"Supported"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Latency",value:"Ultra-Low (0.038s)"},{label:"Warranty",value:"1 Year"},] },
 
 
      { id:"mh-008", name:"Monster Persona 3rd ANC", model:"MH-PS-3ANC", category:"headphones",
@@ -186,8 +235,6 @@ var PRODUCTS = [
       {type:"image", url:"img/per5_7.jpeg", caption:"Front view"},
       {type:"image", url:"img/per5_9.jpeg", caption:"Front view"},
       {type:"image", url:"img/per5_10.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/per5_11.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/per5_12.jpeg", caption:"Front view"},
       {type:"image", url:"img/per5_11.jpeg", caption:"Action"}
     ],
     description:"The Monster Persona 5th ANC is a premium over-ear headphone featuring Bluetooth 6.0, powerful 40mm drivers, and advanced Active Noise Cancellation. With up to 70 hours of battery life, multipoint connectivity, and a foldable design, it's built for music, gaming, travel, and everyday use.",
@@ -195,7 +242,7 @@ var PRODUCTS = [
 
 
      { id:"mh-011", name:"Monster Persona 6th ANC", model:"MH-PS-6ANC", category:"headphones",
-    regularPrice:14999, discountPrice:10099, rating:0, stock:"Out Of Stock", badge:"",
+    regularPrice:14999, discountPrice:10099, rating:0, stock:"Out Of Stock", badge:"PREMIUM",
     media:[
       {type:"image", url:"img/per6.jpeg", caption:"Front view"},
       {type:"image", url:"img/per6_1.jpeg", caption:"Front view"},
@@ -207,9 +254,6 @@ var PRODUCTS = [
       {type:"image", url:"img/per6_8.jpeg", caption:"Front view"},
       {type:"image", url:"img/per6_7.jpeg", caption:"Front view"},
       {type:"image", url:"img/per6_9.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/per5_10.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/per5_11.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/per5_12.jpeg", caption:"Front view"},
       {type:"image", url:"img/per6_10.jpeg", caption:"Action"}
     ],
     description:"The latest Persona series headphone from Monster, featuring Bluetooth 6.0, powerful ANC, multipoint connectivity, and up to 60 hours of battery life. Designed for premium music listening, travel, work, and gaming.",
@@ -231,9 +275,6 @@ var PRODUCTS = [
       {type:"image", url:"img/m100_4.jpeg", caption:"Front view"},
       {type:"image", url:"img/m100_5.jpeg", caption:"Front view"},
       {type:"image", url:"img/m100_6.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
       {type:"image", url:"img/m100_7.jpeg", caption:"Action"}
     ],
     description:".The Monster Mission 100 combines powerful sound, Bluetooth 5.4 connectivity, and up to 40 hours of battery life in a lightweight, comfortable design. Perfect for music, gaming, work, and daily use with AI noise reduction and wired AUX support.",
@@ -249,9 +290,6 @@ var PRODUCTS = [
       {type:"image", url:"img/m200_4.jpeg", caption:"Front view"},
       {type:"image", url:"img/m200_5.jpeg", caption:"Front view"},
       {type:"image", url:"img/m200_6.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/m200_7.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
       {type:"image", url:"img/m200_8.jpeg", caption:"Action"}
     ],
     description:"The Monster Mission 200 delivers powerful Hi-Fi audio with 40mm dynamic drivers, Bluetooth 5.4 connectivity, and an impressive 60-hour battery life. Featuring AI call noise cancellation, 3 EQ sound modes, and a comfortable foldable design, it's perfect for music, gaming, work, and travel.",
@@ -259,7 +297,7 @@ var PRODUCTS = [
 
 
      { id:"mh-014", name:"Monster MIssion 300", model:"MH-MN-300", category:"headphones",
-    regularPrice:20999, discountPrice:12299, rating:0, stock:"Out Of Stock", badge:"",
+    regularPrice:20999, discountPrice:12299, rating:0, stock:"Out Of Stock", badge:"GAMING BEAST",
     media:[
      {type:"image", url:"img/m300.jpeg", caption:"Front view"},
       {type:"image", url:"img/m300_1.jpeg", caption:"Front view"},
@@ -288,12 +326,6 @@ var PRODUCTS = [
       {type:"image", url:"img/n10_1.jpeg", caption:"Front view"},
       {type:"image", url:"img/n10_2.jpeg", caption:"Front view"},
       {type:"image", url:"img/n10_3.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/n10_4.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
       {type:"image", url:"img/n10_4.jpeg", caption:"Action"}
     ],
     description:"The Monster Harmonic N10 is a comfortable, over-ear wireless Bluetooth headset featuring 40mm dynamic drivers for rich bass. It offers up to 10 hours of battery life, advanced Bluetooth 6.0 connectivity, and an AI-enhanced microphone for crystal-clear calls.",
@@ -306,12 +338,6 @@ var PRODUCTS = [
       {type:"image", url:"img/n21.jpeg", caption:"Front view"},
       {type:"image", url:"img/n21_1.jpeg", caption:"Front view"},
       {type:"image", url:"img/n21_2.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_p.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_t.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08_bh.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08bt.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08ft.jpeg", caption:"Front view"},
       {type:"image", url:"img/n21_3.jpeg", caption:"Front view"},
       
       {type:"image", url:"img/mqh08.jpeg", caption:"Action"}
@@ -321,7 +347,7 @@ var PRODUCTS = [
 
 
  { id:"mh-017", name:"Monster Harmonic N22", model:"MH-HM-N22", category:"headphones",
-    regularPrice:31499, discountPrice:14799, rating:0, stock:"Out Of Stock", badge:"",
+    regularPrice:31499, discountPrice:14799, rating:0, stock:"Out Of Stock", badge:"LUXURY",
     media:[
       {type:"image", url:"img/n22.jpeg", caption:"Front view"},
       {type:"image", url:"img/n22_1.jpeg", caption:"Front view"},
@@ -332,7 +358,6 @@ var PRODUCTS = [
       {type:"image", url:"img/n22_6.jpeg", caption:"Front view"},
       {type:"image", url:"img/n22_7.jpeg", caption:"Front view"},
       {type:"image", url:"img/n22_8.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
       {type:"image", url:"img/n22_9.jpeg", caption:"Action"}
     ],
     description:"The Monster Harmonic N22 is a premium ANC headphone featuring Bluetooth 6.0, powerful 40mm drivers, and an incredible 110-hour battery life. With Hybrid ANC, Transparency Mode, and multipoint connectivity, it's designed for immersive music, travel, work, and gaming.",
@@ -340,36 +365,43 @@ var PRODUCTS = [
 
 
 
-   { id:"mh-018", name:"Monster Airstar AH100", model:"MH-AS-AH100", category:"headphones",
-    regularPrice:6199, discountPrice:2999, rating:0, stock:"Out Of Stock", badge:"",
-    media:[
-      {type:"image", url:"img/ah100.jpeg", caption:"Front view"},
-      {type:"image", url:"img/ah100_1.jpeg", caption:"Front view"},
-      {type:"image", url:"img/ah100_2.jpeg", caption:"Front view"},
-      {type:"image", url:"img/ah100_3.jpeg", caption:"Front view"},
-      {type:"image", url:"img/ah100_4.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/n22_5.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/n22_6.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/n22_7.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/ah100_5.jpeg", caption:"Front view"},
-      // {type:"image", url:"img/mqh08s.jpeg", caption:"Front view"},
-      {type:"image", url:"img/ah100_5.jpeg", caption:"Action"}
-    ],
-    description:"The Monster Harmonic N22 is a premium ANC headphone featuring Bluetooth 6.0, powerful 40mm drivers, and an incredible 110-hour battery life. With Hybrid ANC, Transparency Mode, and multipoint connectivity, it's designed for immersive music, travel, work, and gaming.",
-    specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 110 hours"},{label:"Bluetooth",value:"6.0"},{label:"ANC",value:"Hybrid"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"ANC Depth",value:"Up to -45dB"},{label:"Warranty",value:"1 Year "}] },
+  //  { id:"mh-018", name:"Monster Airstar AH100", model:"MH-AS-AH100", category:"headphones",
+  //   regularPrice:6199, discountPrice:2999, rating:0, stock:"Out Of Stock", badge:"",
+  //   media:[
+  //     {type:"image", url:"img/ah100.jpeg", caption:"Front view"},
+  //     {type:"image", url:"img/ah100_1.jpeg", caption:"Front view"},
+  //     {type:"image", url:"img/ah100_2.jpeg", caption:"Front view"},
+  //     {type:"image", url:"img/ah100_3.jpeg", caption:"Front view"},
+  //     {type:"image", url:"img/ah100_4.jpeg", caption:"Front view"},
+  //     {type:"image", url:"img/ah100_5.jpeg", caption:"Action"}
+  //   ],
+  //   description:"The Monster Harmonic N22 is a premium ANC headphone featuring Bluetooth 6.0, powerful 40mm drivers, and an incredible 110-hour battery life. With Hybrid ANC, Transparency Mode, and multipoint connectivity, it's designed for immersive music, travel, work, and gaming.",
+  //   specs:[{label:"Driver",value:"40mm"},{label:"Battery",value:"Upto 110 hours"},{label:"Bluetooth",value:"6.0"},{label:"ANC",value:"Hybrid"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"ANC Depth",value:"Up to -45dB"},{label:"Warranty",value:"1 Year "}] },
 
 
-  // ===== TWS EARBUDS =====
-  { id:"tws-001", name:"Monster Clarity 101 Air", model:"TWS-CL-101", category:"tws",
-    regularPrice:7500, discountPrice:5490, rating:4.6, stock:"In Stock", badge:"Best Seller",
+
+
+
+  // EARBUDS
+  { id:"tws-001", name:"Monster Aura Fit GT17", model:"TWS-AF-GT17", category:"tws",
+    regularPrice:2600, discountPrice:1400, rating:0, stock:"In Stock", badge:"Best Seller",
     media:[
-      {type:"image", url:"https://images.pexels.com/photos/3780653/pexels-photo-3780653.jpeg", caption:"Earbuds"},
-      {type:"image", url:"https://images.pexels.com/photos/3780654/pexels-photo-3780654.jpeg", caption:"Case"},
-      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+      {type:"image", url:"earbud/gt17.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_1.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_2.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_6.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_4.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_3.jpeg", caption:"Earbuds"},
+      {type:"image", url:"earbud/gt17_5.jpeg", caption:"Earbuds"}
+      // {type:"image", url:"https://images.pexels.com/photos/3780654/pexels-photo-3780654.jpeg", caption:"Case"},
+      // {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
     ],
-    description:"True wireless earbuds with 10mm drivers, ENC mic, touch controls, and 24-hour total battery with charging case. Compact and lightweight.",
-    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Connectivity",value:"Bluetooth + Wired Mode"},{label:"Charging",value:"USB-C + Qi"}] },
-  { id:"tws-002", name:"Monster Soundflow 152", model:"TWS-SF-152", category:"tws",
+    description:"Experience premium sound in a compact design with the Monster Aura Fit GT17. Featuring Bluetooth 5.4, ANC + ENC noise cancellation, low-latency gaming mode, and up to 24 hours of total battery life, it's perfect for music, gaming, calls, and everyday use",
+    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 24h case"},{label:"Bluetooth",value:"5.4"},{label:"Latency",value:"45ms"},{label:"Waterproof Rating",value:"IPX4/IPX5"}
+      ,{label:"ANC + ENC",value:"Supported"},{label:"Wireless Range",value:"10m+"},{label:"Charging",value:"Type-C"},{label:"Warranty",value:"1 Year "}] },
+  
+  
+      { id:"tws-002", name:"Monster Aura Fit GT19", model:"TWS-AF-GT19", category:"tws",
     regularPrice:9800, discountPrice:7490, rating:4.7, stock:"In Stock", badge:"ANC",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4109591/pexels-photo-4109591.jpeg", caption:"Earbuds"},
@@ -377,8 +409,9 @@ var PRODUCTS = [
       {type:"image", url:"https://images.pexels.com/photos/4109593/pexels-photo-4109593.jpeg", caption:"Detail"}
     ],
     description:"Active noise cancelling TWS earbuds with transparency mode, 11mm drivers, and 30-hour total playback. Crystal clear calls with dual mic ENC.",
-    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 22h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"}] },
-  { id:"tws-003", name:"Monster N-Lite 206 TWS", model:"TWS-NL-206", category:"tws",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 22h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+  
+    { id:"tws-003", name:"Monster Aura Fit GT22", model:"TWS-AF-GT22", category:"tws",
     regularPrice:4200, discountPrice:3290, rating:4.2, stock:"In Stock", badge:"Budget Pick",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4109655/pexels-photo-4109655.jpeg", caption:"Earbuds"},
@@ -386,7 +419,9 @@ var PRODUCTS = [
     ],
     description:"Affordable true wireless earbuds with decent sound, touch controls, and 20-hour total battery. Perfect entry into wireless audio.",
     specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"5h + 15h case"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"}] },
-  { id:"tws-004", name:"Monster Elements In-Ear", model:"TWS-EL-IE", category:"tws",
+  
+  
+    { id:"tws-004", name:"Monster Aura Fit GT23", model:"TWS-AF-GT23", category:"tws",
     regularPrice:11500, discountPrice:8990, rating:4.8, stock:"In Stock", badge:"Premium",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4109610/pexels-photo-4109610.jpeg", caption:"Earbuds"},
@@ -395,16 +430,20 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"Product video"}
     ],
     description:"Premium TWS with hi-res audio, dual driver setup, adaptive ANC, and wireless charging case. Studio-grade sound in your pocket.",
-    specs:[{label:"Driver",value:"Dual 8mm+10mm"},{label:"Battery",value:"7h + 24h case"},{label:"Bluetooth",value:"5.3 + LDAC"},{label:"ANC",value:"Adaptive ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"}] },
-  { id:"tws-005", name:"Monster Sport TWS Pro", model:"TWS-SP-PRO", category:"tws",
+    specs:[{label:"Driver",value:"Dual 8mm+10mm"},{label:"Battery",value:"7h + 24h case"},{label:"Bluetooth",value:"5.3 + LDAC"},{label:"ANC",value:"Adaptive ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+ 
+ 
+    { id:"tws-005", name:"Monster Aura Fit GT31", model:"TWS-AF-GT31", category:"tws",
     regularPrice:6800, discountPrice:5290, rating:4.5, stock:"Low Stock", badge:"",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4109620/pexels-photo-4109620.jpeg", caption:"Earbuds"},
       {type:"image", url:"https://images.pexels.com/photos/4109621/pexels-photo-4109621.jpeg", caption:"Action"}
     ],
     description:"Sports-focused TWS with ear hooks, IPX7 water resistance, and secure fit. Powerful bass to fuel your workouts.",
-    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX7"},{label:"Charging",value:"USB-C"}] },
-  { id:"tws-006", name:"Monster Clarity 102 ANC", model:"TWS-CL-102", category:"tws",
+    specs:[{label:"Driver",value:"10mm"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX7"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year "}] },
+  
+  
+    { id:"tws-006", name:"Monster Aura Fit GT34", model:"TWS-AF-GT34", category:"tws",
     regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
     media:[
       {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
@@ -412,7 +451,68 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
     ],
     description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
-    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"}] },
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+    { id:"tws-007", name:"Monster Aura Fit GT36", model:"TWS-AF-GT36", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+
+    { id:"tws-008", name:"Monster Aura Fit XT02", model:"TWS-AF-GT33", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+    { id:"tws-009", name:"Monster Aura Fit GT36", model:"TWS-CL-102", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+    { id:"tws-010", name:"Monster Aura Fit GT36", model:"TWS-CL-102", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+    { id:"tws-011", name:"Monster Aura Fit GT36", model:"TWS-CL-102", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
+
+    { id:"tws-012", name:"Monster Aura Fit GT36", model:"TWS-CL-102", category:"tws",
+    regularPrice:10500, discountPrice:8250, rating:4.7, stock:"In Stock", badge:"Hot Deal",
+    media:[
+      {type:"image", url:"https://images.pexels.com/photos/4109630/pexels-photo-4109630.jpeg", caption:"Earbuds"},
+      {type:"image", url:"https://images.pexels.com/photos/4109631/pexels-photo-4109631.jpeg", caption:"Case"},
+      {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
+    ],
+    description:"Next-gen Clarity with stronger ANC, longer battery, and improved call quality. The upgrade everyone's been waiting for.",
+    specs:[{label:"Driver",value:"11mm"},{label:"Battery",value:"8h + 26h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"Hybrid ANC"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
 
   // ===== OPEN EARBUDS =====
   { id:"open-001", name:"Monster OpenFit 100", model:"OPEN-OF-100", category:"open",
@@ -423,7 +523,7 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
     ],
     description:"Open-ear earbuds with air conduction technology, keeping you aware of your surroundings. Comfortable silicone hooks for all-day wear.",
-    specs:[{label:"Driver",value:"16mm Air"},{label:"Battery",value:"7h + 21h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"}] },
+    specs:[{label:"Driver",value:"16mm Air"},{label:"Battery",value:"7h + 21h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year "}] },
   { id:"open-002", name:"Monster OpenFlow Pro", model:"OPEN-OF-PRO", category:"open",
     regularPrice:12500, discountPrice:9990, rating:4.7, stock:"In Stock", badge:"Premium",
     media:[
@@ -432,7 +532,7 @@ var PRODUCTS = [
       {type:"image", url:"https://images.pexels.com/photos/4109647/pexels-photo-4109647.jpeg", caption:"Detail"}
     ],
     description:"Premium open-ear earbuds with directional audio, premium build, and 28-hour total battery. Ideal for outdoor activities and office use.",
-    specs:[{label:"Driver",value:"18mm Air"},{label:"Battery",value:"8h + 20h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"}] },
+    specs:[{label:"Driver",value:"18mm Air"},{label:"Battery",value:"8h + 20h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] },
   { id:"open-003", name:"Monster AirClip Lite", model:"OPEN-AC-LT", category:"open",
     regularPrice:5500, discountPrice:4290, rating:4.3, stock:"In Stock", badge:"Budget Pick",
     media:[
@@ -440,7 +540,7 @@ var PRODUCTS = [
       {type:"image", url:"https://images.pexels.com/photos/4109651/pexels-photo-4109651.jpeg", caption:"Side"}
     ],
     description:"Affordable open-ear clip-on design with decent sound and comfortable fit. Great for casual listening while staying aware.",
-    specs:[{label:"Driver",value:"14mm Air"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"}] },
+    specs:[{label:"Driver",value:"14mm Air"},{label:"Battery",value:"6h + 18h case"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year "}] },
   { id:"open-004", name:"Monster OpenSport X", model:"OPEN-OS-X", category:"open",
     regularPrice:7800, discountPrice:6290, rating:4.4, stock:"Low Stock", badge:"",
     media:[
@@ -449,7 +549,7 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"In use"}
     ],
     description:"Sports open-ear earbuds with flexible titanium hooks, IPX6 rating, and powerful bass. Built for runners and cyclists.",
-    specs:[{label:"Driver",value:"16mm Air"},{label:"Battery",value:"7h + 21h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX6"},{label:"Charging",value:"USB-C"}] },
+    specs:[{label:"Driver",value:"16mm Air"},{label:"Battery",value:"7h + 21h case"},{label:"Bluetooth",value:"5.3"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX6"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year "}] },
   { id:"open-005", name:"Monster OpenLite Air", model:"OPEN-OL-AIR", category:"open",
     regularPrice:6200, discountPrice:4990, rating:4.2, stock:"In Stock", badge:"",
     media:[
@@ -457,7 +557,7 @@ var PRODUCTS = [
       {type:"image", url:"https://images.pexels.com/photos/4109671/pexels-photo-4109671.jpeg", caption:"Case"}
     ],
     description:"Lightweight open-ear earbuds with comfortable fit, balanced sound, and 22-hour total battery. All-day comfort for calls and music.",
-    specs:[{label:"Driver",value:"15mm Air"},{label:"Battery",value:"6h + 16h case"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"}] },
+    specs:[{label:"Driver",value:"15mm Air"},{label:"Battery",value:"6h + 16h case"},{label:"Bluetooth",value:"5.2"},{label:"ANC",value:"No"},{label:"Rating",value:"IPX4"},{label:"Charging",value:"USB-C"},{label:"Warranty",value:"1 Year "}] },
   { id:"open-006", name:"Monster OpenStudio Pro", model:"OPEN-OS-PRO", category:"open",
     regularPrice:13500, discountPrice:10990, rating:4.8, stock:"In Stock", badge:"Premium",
     media:[
@@ -467,7 +567,7 @@ var PRODUCTS = [
       {type:"video", url:"https://cdn.coverr.co/videos/coverr-putting-in-earbuds-2635/1080p.mp4", caption:"Product video"}
     ],
     description:"Reference open-ear earbuds with studio tuning, premium materials, and 30-hour battery. The finest open-ear listening experience.",
-    specs:[{label:"Driver",value:"20mm Air"},{label:"Battery",value:"9h + 21h case"},{label:"Bluetooth",value:"5.3 + LDAC"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"}] }
+    specs:[{label:"Driver",value:"20mm Air"},{label:"Battery",value:"9h + 21h case"},{label:"Bluetooth",value:"5.3 + LDAC"},{label:"ANC",value:"No (Open)"},{label:"Rating",value:"IPX5"},{label:"Charging",value:"USB-C + Qi"},{label:"Warranty",value:"1 Year "}] }
 ];
 
 var CATEGORIES = [
@@ -834,8 +934,8 @@ function initDetails(){
 
   // Buy links
   var orderText = "Hello! I'm interested in buying this product from Monster Music BD:%0A%0A*Product:* " + product.name + "%0A*Model:* " + product.model + "%0A*Price:* " + formatPrice(product.discountPrice) + " (Regular: " + formatPrice(product.regularPrice) + ")%0A%0APlease share availability and delivery details.";
-  document.getElementById("buyWhatsApp").href = "https://wa.me/8801XXXXXXXXX?text=" + orderText;
-  document.getElementById("buyMessenger").href = "https://m.me/your-page?ref=" + encodeURIComponent(product.model);
+  document.getElementById("buyWhatsApp").href = "https://wa.me/8801601233212?text=" + orderText;
+  document.getElementById("buyMessenger").href = "https://m.me/1169534989576842" + encodeURIComponent(product.model);
 
   // Related products
   var related = [];
@@ -846,7 +946,7 @@ function initDetails(){
   }
   var relatedList = related.slice(0,4);
   if(relatedList.length<4){
-    for(var j=0;j<otherCats.length && relatedList.length<4;j++) relatedList.push(otherCats[j]);
+    for(var j=0;j<otherCats.length && relatedList.length<8;j++) relatedList.push(otherCats[j]);
   }
 
   var relatedGrid = document.getElementById("relatedGrid");
