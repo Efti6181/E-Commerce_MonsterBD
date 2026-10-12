@@ -2,7 +2,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const required = ["index.html", "details.html", "style.css", "script.js", "images/image.svg"];
+const required = ["index.html", "details.html", "style.css", "script.js", "images/headphones-3d.png"];
 let ok = true;
 
 for (const f of required) {

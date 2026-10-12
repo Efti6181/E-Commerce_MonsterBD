@@ -618,14 +618,14 @@ var CATEGORIES = [
   { id:"headphones", label:"Headphones" },
   { id:"tws", label:"TWS Earbuds" },
   { id:"open", label:"Open Earbuds" },
-  // { id:"wired", label:"Wired Headphones" }
+  { id:"wired", label:"Wired Headphones" }
 ];
 
 var POLICIES = {
   terms: { title:"Terms & Conditions", body:"<p>By purchasing from Monster Music BD (operated by Tech n' Trinkets), you agree to the following terms:</p><h5>1. Orders</h5><p>All orders are subject to product availability. We reserve the right to cancel any order before delivery.</p><h5>2. Pricing</h5><p>Prices are listed in Bangladeshi Taka (BDT) and include applicable taxes. Discounted prices are valid for the promotional period stated.</p><h5>3. Delivery</h5><p>Inside Chittagong: 24-48 hours. Outside Chittagong: 3-5 working days via courier. Delivery charges are calculated at checkout.</p><h5>4. Authenticity</h5><p>All Monster products sold by us are 100% genuine and sourced from authorized distributors.</p>" },
-  warranty: { title:"Warranty Claim Rules", body:"<p>Monster audio products come with a warranty as specified on each product page. To claim warranty:</p><h5>Eligibility</h5><ul><li>Original invoice / order confirmation must be presented.</li><li>Product must be within the warranty period.</li><li>Warranty sticker / serial number must be intact.</li></ul><h5>Covered</h5><ul><li>Manufacturing defects in sound, battery, or Bluetooth.</li><li>Charging port or button malfunctions under normal use.</li></ul><h5>Not Covered</h5><ul><li>Physical damage, drops, water damage (unless IP-rated failure).</li><li>Damage from unauthorized repair or modification.</li><li>Normal wear and tear of ear pads, cables, or case.</li></ul><h5>How to Claim</h5><p>Message us on WhatsApp or Messenger with your order ID and a short video of the issue. We will arrange pickup or service.</p>" },
+  warranty: { title:"Warranty Claim Rules", body:"<p>Monster audio products come with a warranty as specified on each product page. To claim warranty:</p><h5>Eligibility</h5><ul><li>Original invoice / order confirmation must be presented.</li><li>Product must be within the warranty period.</li><li>Warranty sticker / serial number must be intact.</li></ul><h5>Covered</h5><ul><li>Manufacturing defects in sound, battery, or Bluetooth.</li><li>Charging port or button malfunctions under normal use.</li></ul><h5>Not Covered</h5><ul><li>Physical damage, drops, water damage (unless IP-rated failure).</li><li>Damage from unauthorized repair or modification.</li><li>Normal wear and tear of ear pads, cables, or case.</li></ul><h5>How to Claim</h5><p>Message us on WhatsApp with your order ID and a short video of the issue. We will arrange pickup or service.</p>" },
   returns: { title:"Return & Refund", body:"<h5>7-Day Return Window</h5><p>Unopened products can be returned within 7 days of delivery for a full refund or exchange.</p><h5>Condition</h5><p>Returned items must be in original packaging with all accessories. Opened items are only eligible for return if defective.</p><h5>Refund Process</h5><p>Refunds are processed within 5-7 working days to the original payment method after inspection.</p>" },
-  privacy: { title:"Privacy Policy", body:"<p>We only collect the information necessary to process your order (name, phone, address). We never sell your data to third parties. Chat links (Messenger, WhatsApp) open directly to our official pages.</p>" }
+  privacy: { title:"Privacy Policy", body:"<p>We only collect the information necessary to process your order (name, phone, address). We never sell your data to third parties. WhatsApp chat links open directly to our official pages.</p>" }
 };
 
 function formatPrice(n){ return "\u09F3" + n.toLocaleString("en-US"); }
@@ -657,7 +657,7 @@ function productCardHTML(p){
       '<div class="pc-model">'+p.model+'</div>' +
       '<div class="pc-rating"><span class="stars">'+starsFor(p.rating)+'</span><span>'+p.rating+'</span></div>' +
       '<div class="pc-prices"><span class="reg">'+formatPrice(p.regularPrice)+'</span><span class="now">'+formatPrice(p.discountPrice)+'</span></div>' +
-      '<button class="pc-cta">View Details</button>' +
+      '<button class="pc-cta" aria-label="View '+p.name+'">View Details &rarr;</button>' +
     '</div>' +
   '</div>';
 }
@@ -725,39 +725,6 @@ function initHome(){
   document.getElementById("heroNow").textContent = formatPrice(featured.discountPrice);
   document.getElementById("heroCard").addEventListener("click", function(){ goToDetails(featured.id); });
 
-  // Category cards
-  var catIcons = {
-    headphones: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>',
-    tws: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M8 8a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0v-6a4 4 0 0 1 4-4Z"/><path d="M16 8a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0v-6a4 4 0 0 1 4-4Z"/></svg>',
-    open: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M3 12v3a4 4 0 0 0 4 4M21 12v3a4 4 0 0 1-4 4"/></svg>'
-  };
-  var catDesc = {
-    headphones:"Over-ear comfort with powerful sound and ANC.",
-    tws:"True wireless freedom with crisp, clear audio.",
-    open:"Open-ear design that keeps you aware."
-  };
-  var catHTML = "";
-  for(var c=0;c<CATEGORIES.length;c++){
-    var cat = CATEGORIES[c];
-    var count = 0;
-    for(var k=0;k<PRODUCTS.length;k++){ if(PRODUCTS[k].category===cat.id) count++; }
-    catHTML += '<a href="#'+cat.id+'" class="cat-card" data-cat="'+cat.id+'">' +
-      '<div class="cat-icon">'+(catIcons[cat.id]||"")+'</div>' +
-      '<h3>'+cat.label+'</h3>' +
-      '<p>'+catDesc[cat.id]+'</p>' +
-      '<span class="cat-count">'+count+' products &rarr;</span>' +
-    '</a>';
-  }
-  document.getElementById("catGrid").innerHTML = catHTML;
-  document.querySelectorAll(".cat-card").forEach(function(card){
-    card.addEventListener("click", function(e){
-      e.preventDefault();
-      var cat = this.getAttribute("data-cat");
-      filterByCategory(cat);
-      document.getElementById("all").scrollIntoView({ behavior:"smooth" });
-    });
-  });
-
   // Product grid with filter + sort
   var currentCat = "all";
   var currentSort = "featured";
@@ -776,7 +743,7 @@ function initHome(){
     var empty = document.getElementById("emptyState");
     document.getElementById("resultCount").textContent = list.length + " product" + (list.length!==1?"s":"");
 
-    if(list.length===0){ grid.innerHTML=""; empty.style.display="block"; return; }
+    if(list.length===0){ grid.innerHTML=""; empty.style.display="block"; empty.querySelector("h3").textContent = currentCat === "wired" ? "Wired sound. Coming soon." : "No products found"; empty.querySelector("p").textContent = currentCat === "wired" ? "Our wired headphones collection is on its way. Explore our other audio collections meanwhile." : "Try a different category or check back soon."; return; }
     empty.style.display = "none";
     grid.innerHTML = list.map(productCardHTML).join("");
     grid.querySelectorAll("[data-id]").forEach(function(card){
@@ -786,40 +753,44 @@ function initHome(){
 
   function filterByCategory(cat){
     currentCat = cat;
+    var label = {all:"All Products",headphones:"Headphones",tws:"TWS Earbuds",open:"Open Earbuds",wired:"Wired Headphones"}[cat];
+    document.getElementById("collectionTitle").textContent = label;
+    document.querySelectorAll(".nav-link").forEach(function(link){
+      var active=link.getAttribute("data-nav")===cat;
+      link.classList.toggle("active",active);
+      if(active)link.setAttribute("aria-current","true");else link.removeAttribute("aria-current");
+    });
     var pills = document.querySelectorAll(".pill");
     pills.forEach(function(p){ p.classList.toggle("active", p.getAttribute("data-cat")===cat); });
     renderGrid();
   }
 
-  var pills = document.querySelectorAll(".pill");
-  pills.forEach(function(p){
-    p.addEventListener("click", function(){
-      filterByCategory(this.getAttribute("data-cat"));
-    });
-  });
-
-  document.getElementById("sortSelect").addEventListener("change", function(e){
-    currentSort = e.target.value;
-    renderGrid();
-  });
-
-  // Check URL hash for category filter
-  if(location.hash){
-    var hashCat = location.hash.replace("#","");
-    if(hashCat==="headphones"||hashCat==="tws"||hashCat==="open"){
-      filterByCategory(hashCat);
-    } else if(hashCat==="all"){
-      filterByCategory("all");
-    }
+  var allowedCats=["all","headphones","tws","open","wired"];
+  function goToCategory(cat, updateHash, smooth){
+    if(allowedCats.indexOf(cat)===-1)return;
+    filterByCategory(cat);
+    if(updateHash && location.hash!=="#"+cat)history.pushState(null,"","#"+cat);
+    requestAnimationFrame(function(){document.getElementById("all").scrollIntoView({behavior:smooth&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches?"smooth":"auto",block:"start"});});
   }
-  window.addEventListener("hashchange", function(){
-    var hashCat = location.hash.replace("#","");
-    if(hashCat==="headphones"||hashCat==="tws"||hashCat==="open"||hashCat==="all"){
-      filterByCategory(hashCat);
+  document.querySelectorAll(".pill").forEach(function(p){
+    p.addEventListener("click",function(){goToCategory(this.getAttribute("data-cat"),true,true);});
+  });
+  document.querySelectorAll("a[href]").forEach(function(a){
+    var url=new URL(a.getAttribute("href"),location.href);
+    var cat=url.hash.slice(1);
+    if(allowedCats.indexOf(cat)!==-1 && (url.pathname===location.pathname || /\/index\.html$/.test(url.pathname))) {
+      a.addEventListener("click",function(e){e.preventDefault();goToCategory(cat,true,true);});
     }
   });
-
-  renderGrid();
+  document.getElementById("sortSelect").addEventListener("change",function(e){currentSort=e.target.value;renderGrid();});
+  function applyHash(){
+    var cat=location.hash.slice(1);
+    if(allowedCats.indexOf(cat)!==-1)goToCategory(cat,false,false);
+    else {filterByCategory("all");document.querySelectorAll(".nav-link").forEach(function(a){a.classList.toggle("active",a.dataset.nav==="home");a.removeAttribute("aria-current");});}
+  }
+  window.addEventListener("hashchange",applyHash);
+  window.addEventListener("popstate",applyHash);
+  applyHash();
 
   // Search
   var searchInput = document.getElementById("searchInput");
@@ -882,7 +853,7 @@ function initDetails(){
     return;
   }
 
-  var catLabel = { headphones:"Headphones", tws:"TWS Earbuds", open:"Open Earbuds" }[product.category];
+  var catLabel = { headphones:"Headphones", tws:"TWS Earbuds", open:"Open Earbuds", wired:"Wired Headphones" }[product.category];
   document.getElementById("breadcrumb").innerHTML =
     '<a href="index.html">Home</a><span class="sep">/</span>' +
     '<a href="index.html#'+product.category+'">'+catLabel+'</a><span class="sep">/</span>' +
@@ -940,11 +911,10 @@ function initDetails(){
         '<div class="detail-description"><h3>Description</h3><p>'+product.description+'</p></div>' +
         '<div class="detail-description"><h3>Specifications</h3><div class="specs-grid">'+specsHTML+'</div></div>' +
         '<div class="buy-section"><h3>Buy this product</h3>' +
-          '<p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:8px">Click below to order via Messenger or WhatsApp. The product details will be sent automatically.</p>' +
-          '<div class="buy-buttons">' +
-            '<a href="#" class="buy-btn messenger" id="buyMessenger"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-10 9.8c0 2.9 1.3 5.5 3.4 7.3v3.6l3.2-1.8c.9.2 1.8.4 2.8.4a10 10 0 0 0 10-9.8A10 10 0 0 0 12 2Zm1 13.4-2.5-2.7-4.9 2.7 5.4-5.7 2.6 2.7 4.8-2.7-5.4 5.7Z"/></svg> Messenger</a>' +
-            '<a href="#" class="buy-btn whatsapp" id="buyWhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.7-1.7c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg> WhatsApp</a>' +
-          '</div>' +
+          '<p class="buy-note">Enter your delivery details and review your total before opening WhatsApp.</p>' +
+          '<button type="button" class="buy-btn whatsapp" id="orderNow">Order now &rarr;</button>' +
+          '<p class="buy-note">Your product + delivery charge. No surprises.</p>' +
+        '</div>' +
           '<p class="buy-note">You\'ll be redirected to our official chat with product info pre-filled.</p>' +
         '</div>' +
       '</div>' +
@@ -973,14 +943,12 @@ function initDetails(){
   document.getElementById("galNext").addEventListener("click", function(){ showSlide((current+1)%product.media.length); });
   thumbs.forEach(function(t){ t.addEventListener("click", function(){ showSlide(parseInt(t.getAttribute("data-index"))); }); });
   document.addEventListener("keydown", function(e){
+    if(document.querySelector("dialog[open]") || /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
     if(e.key==="ArrowLeft") showSlide((current-1+product.media.length)%product.media.length);
     if(e.key==="ArrowRight") showSlide((current+1)%product.media.length);
   });
 
-  // Buy links
-  var orderText = "Hello! I'm interested in buying this product from Monster Music BD:%0A%0A*Product:* " + product.name + "%0A*Model:* " + product.model + "%0A*Price:* " + formatPrice(product.discountPrice) + " (Regular: " + formatPrice(product.regularPrice) + ")%0A%0APlease share availability and delivery details.";
-  document.getElementById("buyWhatsApp").href = "https://wa.me/8801601233212?text=" + orderText;
-  document.getElementById("buyMessenger").href = "https://m.me/techntrinkets26" + encodeURIComponent(product.model);
+  document.getElementById("orderNow").addEventListener("click", function(){ openOrder(product); });
 
   // Related products
   var related = [];
