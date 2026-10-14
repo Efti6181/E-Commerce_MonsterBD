@@ -917,7 +917,6 @@ function initDetails(){
         '</div>' +
           '<p class="buy-note">You\'ll be redirected to our official chat with product info pre-filled.</p>' +
         '</div>' +
-      '</div>' +
     '</div>';
 
   // Gallery logic
